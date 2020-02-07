@@ -18,7 +18,6 @@ public class Main2Activity extends AppCompatActivity {
         textView2 = (TextView) findViewById(R.id.textView2);
         Intent intent = getIntent();
         String str = intent.getStringExtra("message");
-        double amount = Double.valueOf(str);
-        textView2.setText("£" + amount * 0.77);
+        textView2.setText("Hello " + str);
     }
 }
